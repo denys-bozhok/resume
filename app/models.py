@@ -31,7 +31,7 @@ class Avatar(models.Model):
    
 
 class Skill(models.Model):
-    name = models.CharField(max_length =50, default='')
+    name = models.CharField(max_length=50)
     lvl = models.IntegerField(validators=[valifator_month])
     
     def __str__(self):
